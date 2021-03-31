@@ -7,9 +7,8 @@
   "scripts": {
     "build": "tsc --build",
     "cleanbuild": "del-cli ./lib && npm run build",
-    "test": "npm explore gruetest -- npm test -- lib/test",
-    "cleantest": "npm run cleanbuild && npm test",
-    "prepack": "npm run cleanbuild && npm test",
+    "cleantest": "npm run cleanbuild",
+    "prepack": "npm run cleanbuild",
     "gendocs": "node node_modules/typedoc/bin/typedoc --out docs src"
   },
   "repository": {
